@@ -1,0 +1,7 @@
+[book]
+authors = ["drewrl3v"]
+language = "en"
+src = "src"
+title = "Probability Puzzlin"
+
+[preprocessor.katex]
