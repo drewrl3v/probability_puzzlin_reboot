@@ -22,7 +22,6 @@ Once you have cargo installed on your computer, you can install the following pa
 
     cargo install mdbook
     cargo install mdbook-katex
-    cargo install mdbook-toc
 
 ## Running mdbook
 In this repo go to the book directory and start the server
