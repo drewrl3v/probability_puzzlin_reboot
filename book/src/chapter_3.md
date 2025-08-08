@@ -1,4 +1,4 @@
-# New Chapter
+# Geometric Probability
 
 
 Here is something.
