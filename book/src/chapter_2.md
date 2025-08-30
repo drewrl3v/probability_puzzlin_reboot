@@ -49,7 +49,7 @@ misprints that Sam will come across?
 
 (a.) On average, how many times must a $6$-sided die be rolled until you see a $65$ pattern?
 
-(b.) On average, how mnay times must a $6$-sided be rolled until there are two rolls in a row 
+(b.) On average, how many times must a $6$-sided be rolled until there are two rolls in a row 
 that differ by $1$ (for example $2$ followed by a $1$ or a $3$, or a $5$ followed by a $6$, ect.)
 
 ### Problem 6:
