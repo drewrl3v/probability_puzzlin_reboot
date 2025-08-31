@@ -139,7 +139,7 @@ E
 = 
 1 + \frac{2}{6}(\frac{70}{17} + \frac{58}{17} + \frac{60}{17})
 =
-\frac{2039}{51}
+\frac{239}{51}
 \approx 4.6863
 $$
 </details>
@@ -163,6 +163,32 @@ $$
 \text{?}
 $$
 
+<details>
+<summary>Solution</summary>
+This is a conceptually very trick problem. We need to make the following observation
+
+1. Conditioned on no odd rolls is the same as saying that the sequence of rolls comprises 
+of $2$'s and $4$'s until we see a $6$. So We changed the problem into determining:
+
+$$E[N_6 ~|~ \text{only seeing 2's and 4's} ]$$
+
+For simplicity we just denote this expectation by $E$.
+
+We can determine this expectation recursively, just remember that the conditioning on seeing $2$'s and $4$'s does not change the fact that there is a $\frac{1}{6}$ chance of getting a $6$ in the next roll or a $\frac{2}{6}$ chance of getting a $2$ or a $4$. Thus the recursion is:
+
+$$
+E = 1 + \frac{1}{6}(0) + \frac{2}{6} E
+$$
+
+$$
+6E = 6 + 2E
+$$
+
+$$
+E = \frac{6}{4} = 1.5
+$$
+</details>
+
 (b.) You roll a $1$-million sided die until you get a 6. What is the expected number of rolls conditioned on the event 
 that no odd numbers show up?
 
@@ -171,5 +197,52 @@ $$
 =
 \text{?}
 $$
+
+<details>
+<summary>Solution</summary>
+We follow what we did in part $(a)$. Solving this problem is equivalent to determing:
+
+$$E[N_6 ~|~ \text{Only seeing: 2,4,8,10,\dots, 1000000} ]$$
+
+Again, we denote the above expectation by $E$ for convenience.
+
+Note on the next roll given some sequence comprised of numbers from $\{2,4,8,10,\dots, 1000000\}$, 
+the probability of rolling a $6$ is $\frac{1}{1000000}$.
+
+And the probability of rolling one of the numbers from $\{2,4,8,10,\dots, 1000000\}$ is $\frac{499999}{1000000} \approx 0$.
+
+Thus the recursion is given by: 
+
+$$
+E
+= 
+1 + \frac{1}{1000000}(0) + \frac{499999}{1000000} E
+$$
+
+$$
+1000000 E
+= 
+1000000  + 499999 E
+$$
+
+
+$$
+500001 E
+= 
+1000000
+$$
+
+$$
+E
+= 
+\frac{1000000}{500001}
+\approx
+1.999996
+$$
+
+So just a little under $2$.
+</details>
+
+
 
 
