@@ -61,3 +61,91 @@ $$
 
 Therefore the probability of a needle crossing is $\frac{|A|}{|\Omega|} = \frac{2}{\pi}$.
 </details>
+
+
+<details>
+<summary>Alternative Solution</summary>
+Let $p(l)$ denote the probability that a needle of length $l$ intersects a line. We aim to derive 
+$p(1)$ for a needle of length $1$.
+
+Suppose we divide the needle of length $l$ into two parts of lengths $l_1$ and $l_2$ s.t. $l = l_1 + l_2$. Then the needle intersects a line if either of the two parts intersects a line. 
+
+Under the assumption that the two parts behave indepedently, we have: 
+
+$$
+p(l) = p(l_1) + p(l_2)
+$$
+
+This property implies that $p(l)$ is a linear function of $l$. Therefore, we can write:
+
+$$
+p(l) = Cl ~~~~ (\star)
+$$
+
+where $C$ is some constant independent of l.
+
+To determine the constant $C$, consider a more general case: instead of a needle, we toss a
+polygonal curve with a total perimeter $P$ onto the plane. The curve can be divided into $n$ 
+rectilinear segments of lengths $l_1, l_2, \dots, l_n$, where each segment has length less than 
+some constant $d$. 
+
+Define the indicator random variable for each segment:
+
+$$
+    X_i = 
+    \begin{cases} 
+    1 & \text{if the $i$-th segment intersects a line}, \\
+    0 & \text{otherwise}.
+    \end{cases}
+$$   
+
+Let $S$ denote the total number of intersections, i.e. 
+
+$$
+S = X_1 + \dots + X_n
+$$
+
+Since $E(X_i) = p_i$ is the probability of intersection of the $i$th segment and note the property above informs us that $p_i = Cl_i$. Thus by linearity of expectation we have:
+
+$$
+E(S)
+= 
+C(l_1 + l_2 + \dots + l_n)
+= 
+CP
+~~~~(\star \star)
+$$
+
+where $P = \sum_i=1^n l_i$ is the total perimeter of the curve.
+
+Note that this argument holds for any polygonal (as well as rectifiable: **requires analysis**)
+curve. So to find $C$ way consider WLOG teh circle of diamter $d=1$. A circle always intersects 
+a line in exactly two points.
+
+Thus the expected number of i8ntersections for a circle is $E(S) = 2$. From equations $(\star \star)$, 
+the perimeter of a circle is $P = \pi d$, so we have:
+
+$$
+E(S) = C \pi
+$$
+
+Now by substituting $E(S) = 2$, we find:
+
+$$
+C = \frac{2}{\pi}
+$$
+
+Substituting this value into equation $(\star)$, the probability of a needle of length $l$ 
+intersecting a line is:
+
+$$
+p(l)
+= 
+\frac{2l}{\pi}
+$$
+
+Thus for a needle of length $1$ we have $p(1) = \frac{2}{\pi}$.
+</details>
+
+
+
