@@ -147,5 +147,12 @@ $$
 Thus for a needle of length $1$ we have $p(1) = \frac{2}{\pi}$.
 </details>
 
+2. (Laplace's Needle): We have a set of parallel lines that are separated $1$-unit away from each other. Additionally, we have another set of parallel lines, orthogonal to the first set of parallel lines, that are also spaced $1$-unit apart. So the plane is effectively covered by a grid 
+of unit squares. What is the probability that when tossing a needle that it crosses a line?
 
 
+## TODO: Triangles
+
+## TODO: Expectations
+
+## TODO: Crofton's Formula
