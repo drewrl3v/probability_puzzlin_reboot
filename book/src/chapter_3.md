@@ -151,7 +151,18 @@ Thus for a needle of length $1$ we have $p(1) = \frac{2}{\pi}$.
 of unit squares. What is the probability that when tossing a needle that it crosses a line?
 
 
-## TODO: Triangles
+## Triangles
+
+1. You are given an equilateral trinagle with side lengths equal to $2$. What is the minimum 
+number of marbles you must drop into the triangle in order to have a $100\%$ probability that 
+there are at least two marbles within $1$ unit of eachother?
+
+2. (Glass Rod 1): A glass rod of length $1$ is dropped and broken randomly into three pieces.
+What is the probability that the three pieces can be arranged to form a triangle?
+
+3. (Glass Rod 2): A glass rod of length $1$ is broken into two pieces. Then the longer piece is 
+brocken randomly into two pieces. What is the probability that the resulting three pieces can be
+arranged to form a triangle?
 
 ## TODO: Expectations
 

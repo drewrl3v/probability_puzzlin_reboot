@@ -189,6 +189,19 @@ E = \frac{6}{4} = 1.5
 $$
 </details>
 
+
+<details>
+<summary>Edward's Alternative Solution</summary>
+
+Your work goes here!
+
+</details>
+
+
+
+
+
+
 (b.) You roll a $1$-million sided die until you get a 6. What is the expected number of rolls conditioned on the event 
 that no odd numbers show up?
 
