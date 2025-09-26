@@ -192,9 +192,37 @@ $$
 
 <details>
 <summary>Edward's Alternative Solution</summary>
+Another approach is to first find the probability of rolling a $6$ conditioned on the event that no odd numbers show up. 
 
-Your work goes here!
+We wish to find
 
+$$P(\text{The next roll is a 6} ~|~ \text{No odd numbers show up})$$
+
+Notice that the condition can be rephrased as "6 is rolled before any odd number." Assuming that the die is fair, 6, 1, 3, and 5 occur with equal probabilities. Thus,
+
+$$P(\text{6 is rolled before any odd number}) = \frac{1}{4}$$
+
+Using Bayes' theorem, the conditional probability can be written as
+
+$$\frac{P(\text{6 is rolled before any odd number} ~|~ \text{The next roll is a 6})P(\text{The next roll is a 6})}{P(\text{6 is rolled before any odd number})}$$
+
+Well, if the next roll is a 6, then 6 MUST come before any odd number, so
+
+$$P(\text{6 is rolled before any odd number} ~|~ \text{The next roll is a 6}) = 1$$
+
+Also, the unconditioned probability of rolling a 6 is still just one-sixth, so
+
+$$\frac{P(\text{6 is rolled before any odd number} ~|~ \text{The next roll is a 6})P(\text{The next roll is a 6})}{P(\text{6 is rolled before any odd number})} = \frac{\frac{1}{6}}{\frac{1}{4}} = \frac{4}{6}$$
+
+Even with the condition that no odd numbers show up, each roll is still independent and has an equal chance of yielding a 6. Therefore, the number of rolls until a 6 follows a geometric distribution with a probability parameter equal to the conditional probability we just found. We take the reciprocal of the probability parameter to get the expected number of rolls:
+
+$$
+\mathbb{E}[N_6 ~|~ \text{No odds.}] 
+=
+\frac{6}{4}
+=
+1.5
+$$
 </details>
 
 
