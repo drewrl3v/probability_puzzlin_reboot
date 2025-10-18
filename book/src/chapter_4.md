@@ -76,3 +76,8 @@ at a time. The player that removes the last chip wins. Alice goes first, does sh
 
 ## Continuous Games (TODO)
 
+### Problem 8 (Lion v.s. Man)
+
+A man and a lion are placed randomly in a unit circle (the arena).
+Both the lion and the man run at the same rate. The Lion wants its lunch and the man wants to live. Does the Lion have an optimal strategy to catch the man?
+
