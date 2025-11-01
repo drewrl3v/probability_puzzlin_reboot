@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Chapter 4 - Probability Puzzlin</title>
+        <title>Chapter 6 - Probability Puzzlin</title>
 
 
         <!-- Custom HTML head -->
@@ -167,69 +167,17 @@
                 <div id="content" class="content">
                     <main>
                         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
-<h1 id="combinatorial-games-of-no-chance"><a class="header" href="#combinatorial-games-of-no-chance">Combinatorial Games (of no chance)</a></h1>
-<p>To wet our appetite we will focus on games of no chance. In other
-words we assume we have perfect informatoin and given all information
-about the game, we can make an optimal choice.</p>
-<h3 id="problem-1-the-ramsey-game"><a class="header" href="#problem-1-the-ramsey-game">Problem 1 (The Ramsey Game):</a></h3>
-<p>There are two players (Player Blue and Player Red), and there are <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span></span></span></span> points. Player Blue is allowed to pick any two points and draw an edge between the two points blue and similarly for Player Red. A
-player loses if they form a triangle of their color. This means that
-there are three points all connected by the same color edges.</p>
-<p>Player Blue begins the game. Who wins? If it helps here are all the
-edges you can create with only <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span></span></span></span> points. You can color them red or
-blue:</p>
-<img src="media/ramsey.png" alt="ramsey" width="256"/>
-<h2 id="tic-tac-toe-of-colors"><a class="header" href="#tic-tac-toe-of-colors">Tic-Tac-Toe of Colors</a></h2>
-<h3 id="problem-2-the-black-and-white-positions"><a class="header" href="#problem-2-the-black-and-white-positions">Problem 2 (The Black and White Positions)</a></h3>
-<p>We play an ordinary game of tic-tac-toe with the usual rules. This means that a line of <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span></span></span></span>'s, a line or <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span>'s or if there are no more squares left to fill, then the game ends.</p>
-<p>Now we call a position white if there are three <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span>'s on one of the
-diagonals, and let every other end position be defined to be black.</p>
-<p>If the ending position is white then Player <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> wins, otherwise Player <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span> wins. (Player 1 always starts the game.)</p>
-<p>Show that one of the players has a winning strategy.</p>
-<h3 id="problem-3-any-rules-for-black-and-white"><a class="header" href="#problem-3-any-rules-for-black-and-white">Problem 3 (Any Rules for Black and White)</a></h3>
-<p>Suppose that you come up with any rules for what determines of an
-ending position of tic-tac-toe is black or white. Prove that either Player <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> or Player <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span> must have a winnning strategy.</p>
-<h3 id="problem-4-tic-tac-toe-is-solved"><a class="header" href="#problem-4-tic-tac-toe-is-solved">Problem 4 (tic-tac-toe is solved)</a></h3>
-<p>Although odd, if you completed the above two problems then you can prove that in a standard game of tic-tac-toe, that Player <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> has
-a strategy that must end either in a win or a draw. But why? How
-did we show this without having to consider all the possible games
-of tic-tac-toe?</p>
-<h3 id="problem-5-the-game-of-18"><a class="header" href="#problem-5-the-game-of-18">Problem 5 (The Game of 18)</a></h3>
-<p>Here are the rules for the Game of 18: From a deck of cards extract
-nine cards numbered from <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span> to <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span></span></span></span> and place them face up on a
-table. Each of two players in turn take a card. The player wins who
-first obtains <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span> cards whose sum i sexactly <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">18</span></span></span></span>. Player <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> always
-starts the game. Do they always win?</p>
-<h2 id="take-away-games"><a class="header" href="#take-away-games">Take-Away Games</a></h2>
-<h3 id="problem-6-the-game-of-chomp"><a class="header" href="#problem-6-the-game-of-chomp">Problem 6 (The Game of Chomp)</a></h3>
-<p>Alice and Bob take turns biting off pieces of an <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>
-rectangular chocolate bar marked into unit squares. Each bite
-consists of selecting a square and biting off that square plus
-every remaining square above and/or to the its right. Each player
-wishes to avoid getting stuck with the poisonous lower-left square.
-Show that, assuming the bar contains more than one square, Alice
-alwyas has a winning strategy.</p>
-<img src="media/chomp.png" alt="chomp" width="400"/>
-<h3 id="problem-7-chips-on-the-table"><a class="header" href="#problem-7-chips-on-the-table">Problem 7 (Chips on the Table)</a></h3>
-<p>Alice and Bob are are at a table with <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">21</span></span></span></span> chips in its center.
-They each take turns removing some number of chips.</p>
-<p>During a players turn, they are allowed to take <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>, <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span> or <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span> chips
-at a time. The player that removes the last chip wins. Alice goes first, does she always win?</p>
-<h2 id="continuous-games-todo"><a class="header" href="#continuous-games-todo">Continuous Games (TODO)</a></h2>
-<h3 id="problem-8-lion-vs-man"><a class="header" href="#problem-8-lion-vs-man">Problem 8 (Lion v.s. Man)</a></h3>
-<p>A man and a lion are placed randomly in a unit circle (the arena).
-Both the lion and the man run at the same rate. The Lion wants its lunch and the man wants to live. Does the Lion have an optimal strategy to catch the man?</p>
-<h3 id="problem-9-jane-street-game"><a class="header" href="#problem-9-jane-street-game">Problem 9 (Jane Street Game)</a></h3>
+<h1 id="z3-solver"><a class="header" href="#z3-solver">Z3 Solver</a></h1>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="chapter_3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="chapter_5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="chapter_5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="appendixA.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -239,11 +187,11 @@ Both the lion and the man run at the same rate. The Lion wants its lunch and the
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="chapter_3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="chapter_5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="chapter_5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="appendixA.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
